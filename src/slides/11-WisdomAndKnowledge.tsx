@@ -89,17 +89,6 @@ export function WisdomAndKnowledgeSlide() {
           </p>
           <p className="text-xl text-indigo-300">— Colossians 2:3</p>
         </motion.div>
-
-        {/* Personal question */}
-        <motion.div
-          variants={fadeUp}
-          custom={0.7}
-          className="mt-8 text-center"
-        >
-          <p className="text-xl text-white/60">
-            <span className="text-gold-400">💭</span> In what areas of your life do you especially need the "wisdom and knowledge" of Christ?
-          </p>
-        </motion.div>
       </div>
     </Slide>
   )

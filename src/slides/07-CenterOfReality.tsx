@@ -55,7 +55,7 @@ export function CenterOfRealitySlide() {
         <motion.div
           variants={fadeUp}
           custom={0.5}
-          className="flex flex-wrap justify-center gap-4 mb-8"
+          className="flex flex-wrap justify-center gap-4"
         >
           {[
             'Center of the cosmos',
@@ -72,17 +72,6 @@ export function CenterOfRealitySlide() {
               {item}
             </motion.span>
           ))}
-        </motion.div>
-
-        {/* Discussion */}
-        <motion.div
-          variants={fadeUp}
-          custom={0.8}
-          className="bg-white/5 rounded-xl p-8 border border-white/10"
-        >
-          <p className="text-xl text-white/70 text-center">
-            <span className="text-gold-400 font-semibold">Discussion:</span> Have you had difficulties with the idea that Jesus Christ is not one alternative way to have a spiritual experience but is the center of reality?
-          </p>
         </motion.div>
       </div>
     </Slide>

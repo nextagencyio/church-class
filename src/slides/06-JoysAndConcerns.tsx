@@ -80,17 +80,6 @@ export function JoysAndConcernsSlide() {
             </motion.ul>
           </motion.div>
         </div>
-
-        {/* Discussion prompt */}
-        <motion.div
-          variants={fadeUp}
-          custom={0.7}
-          className="mt-10 text-center"
-        >
-          <p className="text-white/50 text-xl">
-            <span className="text-gold-400">Discussion:</span> On the "map" of your life, what were the signposts that led you to Christ?
-          </p>
-        </motion.div>
       </div>
     </Slide>
   )
