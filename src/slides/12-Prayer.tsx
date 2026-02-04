@@ -59,10 +59,11 @@ export function PrayerSlide() {
         <motion.h2
           variants={fadeUp}
           custom={0.15}
-          className="text-4xl md:text-6xl font-bold mb-8 text-shimmer"
+          className="text-4xl md:text-6xl font-bold mb-8 text-shimmer pb-2"
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            textShadow: '0 2px 20px rgba(0,0,0,0.7)'
+            textShadow: '0 2px 20px rgba(0,0,0,0.7)',
+            lineHeight: 1.2
           }}
         >
           Pray
