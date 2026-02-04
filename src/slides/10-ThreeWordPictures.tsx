@@ -1,35 +1,61 @@
 import { motion } from 'framer-motion'
 import { Slide, fadeUp, stagger, scaleIn } from '../components/Slide'
-import { LottieAnimation } from '../components/LottieAnimation'
+
+// SVG Icons
+const JourneyIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-20 h-20" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="M8 56 C20 48, 24 32, 32 32 S44 48, 56 40" className="text-gold-400" strokeLinecap="round" />
+    <circle cx="12" cy="52" r="3" className="fill-gold-400 stroke-none" />
+    <circle cx="32" cy="32" r="3" className="fill-gold-400 stroke-none" />
+    <circle cx="52" cy="44" r="3" className="fill-gold-400 stroke-none" />
+    <path d="M52 38 L56 44 L50 44" className="text-gold-400 fill-gold-400" />
+  </svg>
+)
+
+const RootsIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-20 h-20" fill="none" stroke="currentColor" strokeWidth="2">
+    <ellipse cx="32" cy="16" rx="16" ry="12" className="fill-emerald-500/80 stroke-emerald-600" />
+    <line x1="32" y1="28" x2="32" y2="40" className="text-amber-700" strokeWidth="4" />
+    <path d="M32 40 L20 56" className="text-amber-600" strokeWidth="2" strokeLinecap="round" />
+    <path d="M32 40 L32 58" className="text-amber-600" strokeWidth="2" strokeLinecap="round" />
+    <path d="M32 40 L44 56" className="text-amber-600" strokeWidth="2" strokeLinecap="round" />
+    <path d="M24 48 L16 54" className="text-amber-600" strokeWidth="1.5" strokeLinecap="round" />
+    <path d="M40 48 L48 54" className="text-amber-600" strokeWidth="1.5" strokeLinecap="round" />
+  </svg>
+)
+
+const BuildingIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-20 h-20" fill="none" stroke="currentColor" strokeWidth="2">
+    <rect x="16" y="24" width="32" height="32" className="fill-slate-400/50 stroke-slate-500" />
+    <polygon points="32,8 12,24 52,24" className="fill-amber-700/80 stroke-amber-800" />
+    <rect x="26" y="40" width="12" height="16" className="fill-amber-900/80 stroke-amber-900" />
+    <rect x="20" y="30" width="6" height="6" className="fill-sky-300/50 stroke-sky-400" />
+    <rect x="38" y="30" width="6" height="6" className="fill-sky-300/50 stroke-sky-400" />
+  </svg>
+)
 
 export function ThreeWordPicturesSlide() {
   const pictures = [
     {
-      lottie: '/animations/journey-path.json',
-      emoji: '🚶‍♂️',
+      icon: <JourneyIcon />,
       title: 'A Journey',
       verse: '"just as you received... continue to live"',
       description: 'Life with Christ is an ongoing walk, not a one-time decision',
       question: 'How has your journey with Christ unfolded?',
-      useLottie: true,
     },
     {
-      lottie: '/animations/tree-roots.json',
-      emoji: '🌳',
+      icon: <RootsIcon />,
       title: 'Healthy Roots',
       verse: '"rooted... in him"',
       description: 'Deep roots provide stability and nourishment',
       question: 'What helps you develop deeper roots?',
-      useLottie: true,
     },
     {
-      lottie: '/animations/building.json',
-      emoji: '🏗️',
+      icon: <BuildingIcon />,
       title: 'A Building',
       verse: '"built up in him"',
       description: 'Ongoing construction, being built up day by day',
       question: 'In what ways is your life still "under construction"?',
-      useLottie: true,
     },
   ]
 
@@ -59,17 +85,9 @@ export function ThreeWordPicturesSlide() {
               custom={0.2 + index * 0.15}
               className="bg-gradient-to-b from-white/10 to-white/5 rounded-2xl p-8 border border-white/10 flex flex-col"
             >
-              {/* Icon - Lottie or Emoji */}
+              {/* Icon */}
               <div className="h-24 mb-3 flex items-center justify-center">
-                {item.useLottie ? (
-                  <LottieAnimation
-                    src={item.lottie}
-                    style={{ width: 90, height: 90 }}
-                    speed={0.7}
-                  />
-                ) : (
-                  <span className="text-7xl">{item.emoji}</span>
-                )}
+                {item.icon}
               </div>
 
               {/* Title */}
