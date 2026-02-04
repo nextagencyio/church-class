@@ -4,7 +4,7 @@ import { Slide, fadeUp, DiscussionQuestion, stagger } from '../components/Slide'
 
 export function TodaysLiesSlide() {
   const [revealedCount, setRevealedCount] = useState(1)
-  const totalQuestions = 3
+  const totalQuestions = 2
 
   const revealNext = useCallback(() => {
     setRevealedCount(prev => Math.min(prev + 1, totalQuestions))
@@ -60,17 +60,6 @@ export function TodaysLiesSlide() {
             </DiscussionQuestion>
           </div>
 
-          <div
-            className={`transition-all duration-500 ${
-              revealedCount >= 3
-                ? 'opacity-100 blur-0'
-                : 'opacity-30 blur-sm pointer-events-none select-none'
-            }`}
-          >
-            <DiscussionQuestion number={3}>
-              If the centrality of Christ has not been a problem for you, why do you think other people find it offensive?
-            </DiscussionQuestion>
-          </div>
         </motion.div>
 
       </div>

@@ -24,11 +24,11 @@ export function TitleSlide() {
         />
       </div>
 
-      {/* Custom glow animation - positioned at very bottom, pushed down */}
+      {/* Custom glow animation - positioned at bottom */}
       <motion.div
         variants={fadeIn}
         custom={0.3}
-        className="absolute -bottom-32 left-1/2 -translate-x-1/2 opacity-10 pointer-events-none z-0"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 opacity-10 pointer-events-none z-0"
       >
         <LottieAnimation
           src="/animations/glow-pulse.json"
