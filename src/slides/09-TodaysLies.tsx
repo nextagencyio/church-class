@@ -1,31 +1,7 @@
-import { useState, useEffect, useCallback } from 'react'
 import { motion } from 'framer-motion'
 import { Slide, fadeUp, DiscussionQuestion, stagger } from '../components/Slide'
 
 export function TodaysLiesSlide() {
-  const [revealedCount, setRevealedCount] = useState(1)
-  const totalQuestions = 2
-
-  const revealNext = useCallback(() => {
-    setRevealedCount(prev => Math.min(prev + 1, totalQuestions))
-  }, [])
-
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'ArrowDown') {
-        // Only handle if we still have questions to reveal
-        if (revealedCount < totalQuestions) {
-          e.preventDefault()
-          e.stopPropagation()
-          revealNext()
-        }
-      }
-    }
-
-    window.addEventListener('keydown', handleKeyDown, true)
-    return () => window.removeEventListener('keydown', handleKeyDown, true)
-  }, [revealedCount, revealNext])
-
   return (
     <Slide variant="discussion">
       <div className="max-w-6xl mx-auto">
@@ -48,18 +24,9 @@ export function TodaysLiesSlide() {
             What are some of today's "plausible words" which can deceive Christians?
           </DiscussionQuestion>
 
-          <div
-            className={`transition-all duration-500 ${
-              revealedCount >= 2
-                ? 'opacity-100 blur-0'
-                : 'opacity-30 blur-sm pointer-events-none select-none'
-            }`}
-          >
-            <DiscussionQuestion number={2}>
-              Have you ever been fooled or at least enticed by plausible-sounding lies about Christian living? If so, what was the outcome? If not, how did you discern the falsehood?
-            </DiscussionQuestion>
-          </div>
-
+          <DiscussionQuestion number={2}>
+            Have you ever been fooled or at least enticed by plausible-sounding lies about Christian living? If so, what was the outcome? If not, how did you discern the falsehood?
+          </DiscussionQuestion>
         </motion.div>
 
       </div>
