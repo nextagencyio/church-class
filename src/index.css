@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Merriweather', Georgia, serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+
+  --color-gold-50: #fefce8;
+  --color-gold-100: #fef9c3;
+  --color-gold-200: #fef08a;
+  --color-gold-300: #fde047;
+  --color-gold-400: #facc15;
+  --color-gold-500: #eab308;
+  --color-gold-600: #ca8a04;
+  --color-gold-700: #a16207;
+  --color-gold-800: #854d0e;
+  --color-gold-900: #713f12;
+
+  --color-parchment-50: #fdfcfb;
+  --color-parchment-100: #f9f5f0;
+  --color-parchment-200: #f3ebe0;
+  --color-parchment-300: #e8dcc8;
+  --color-parchment-400: #d4c4a8;
+  --color-parchment-500: #baa582;
+}
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white min-h-screen m-0;
+    font-family: var(--font-serif);
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
+}
