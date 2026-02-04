@@ -38,7 +38,7 @@ export function ScriptureReadingSlide() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-xl md:text-2xl text-white/90 leading-relaxed italic"
           >
-            <sup className="text-gold-400/60 text-base">1</sup> I want you to know how hard I am contending for you and for those at Laodicea, and for all who have not met me personally. <sup className="text-gold-400/60 text-base">2</sup> My goal is that they may be encouraged in heart and united in love, so that they may have the full riches of complete understanding, in order that they may know the mystery of God, namely, Christ, <sup className="text-gold-400/60 text-base">3</sup> <strong className="text-gold-300 not-italic">in whom are hidden all the treasures of wisdom and knowledge.</strong>
+            <sup className="text-gold-400/60 text-base">1</sup> I want you to know how hard I am contending for you and for those at Laodicea, and for all who have not met me personally. <sup className="text-gold-400/60 text-base">2</sup> My goal is that they may be encouraged in heart and united in love, so that they may have the full riches of complete understanding, in order that they may know the mystery of God, namely, Christ, <sup className="text-gold-400/60 text-base">3</sup> <strong className="text-gold-300 not-italic text-glow-pulse">in whom are hidden all the treasures of wisdom and knowledge.</strong>
           </motion.p>
 
           <motion.div
@@ -70,7 +70,7 @@ export function ScriptureReadingSlide() {
             transition={{ delay: 1.7, duration: 0.8 }}
             className="text-xl md:text-2xl text-white/90 leading-relaxed italic"
           >
-            <sup className="text-gold-400/60 text-base">6</sup> So then, just as you received Christ Jesus as Lord, continue to live your lives in him, <sup className="text-gold-400/60 text-base">7</sup> <strong className="text-gold-300 not-italic">rooted and built up in him</strong>, strengthened in the faith as you were taught, and overflowing with thankfulness.
+            <sup className="text-gold-400/60 text-base">6</sup> So then, just as you received Christ Jesus as Lord, continue to live your lives in him, <sup className="text-gold-400/60 text-base">7</sup> <strong className="text-gold-300 not-italic text-glow-pulse">rooted and built up in him</strong>, strengthened in the faith as you were taught, and overflowing with thankfulness.
           </motion.p>
         </motion.div>
       </div>

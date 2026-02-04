@@ -170,7 +170,7 @@ export function SlideContainer({ children }: SlideContainerProps) {
             onClick={() => goToSlide(index)}
             className={`w-2.5 h-2.5 rounded-full transition-all ${
               index === currentSlide
-                ? 'bg-gold-400 w-8'
+                ? 'bg-gold-400 w-8 dot-pulse'
                 : 'bg-white/30 hover:bg-white/50'
             }`}
             aria-label={`Go to slide ${index + 1}`}

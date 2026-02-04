@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Slide, fadeUp, fadeIn, scaleIn } from '../components/Slide'
 import { LottieAnimation } from '../components/LottieAnimation'
 import { FloatingParticles } from '../components/FloatingParticles'
+import { Typewriter } from '../components/Typewriter'
 
 export function TitleSlide() {
   return (
@@ -95,15 +96,17 @@ export function TitleSlide() {
           <div className="w-16 h-px bg-gradient-to-l from-transparent to-gold-400/50" />
         </motion.div>
 
-        {/* Subtitle/Theme */}
-        <motion.p
-          variants={fadeUp}
-          custom={0.4}
+        {/* Subtitle/Theme with typewriter effect */}
+        <p
           className="text-xl md:text-2xl text-white/60 italic max-w-4xl mx-auto"
           style={{ textShadow: '0 1px 8px rgba(0,0,0,0.5)' }}
         >
-          "In Christ are hidden all the treasures of wisdom and knowledge"
-        </motion.p>
+          <Typewriter
+            text={'"In Christ are hidden all the treasures of wisdom and knowledge"'}
+            delay={1.2}
+            speed={0.08}
+          />
+        </p>
       </div>
     </Slide>
   )
