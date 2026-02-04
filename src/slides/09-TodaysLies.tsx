@@ -28,14 +28,14 @@ export function TodaysLiesSlide() {
 
   return (
     <Slide variant="discussion">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div variants={fadeUp} custom={0} className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-500/10 border border-gold-400/30 mb-6">
-            <span className="text-gold-400 text-sm font-semibold uppercase tracking-wider">Discussion Questions</span>
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gold-500/10 border border-gold-400/30 mb-6">
+            <span className="text-gold-400 text-base font-semibold uppercase tracking-wider">Discussion Questions</span>
           </div>
           <h2
-            className="text-3xl md:text-5xl font-bold"
+            className="text-4xl md:text-6xl font-bold"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Discerning <span className="text-gold-400">Truth</span>
@@ -82,12 +82,12 @@ export function TodaysLiesSlide() {
           {revealedCount < totalQuestions ? (
             <button
               onClick={revealNext}
-              className="text-white/50 text-sm hover:text-white/70 transition-colors cursor-pointer"
+              className="text-white/50 text-base hover:text-white/70 transition-colors cursor-pointer"
             >
-              Press <kbd className="px-2 py-1 bg-white/10 rounded text-xs mx-1">→</kbd> or <kbd className="px-2 py-1 bg-white/10 rounded text-xs mx-1">space</kbd> to reveal next question ({revealedCount}/{totalQuestions})
+              Press <kbd className="px-2 py-1 bg-white/10 rounded text-sm mx-1">→</kbd> or <kbd className="px-2 py-1 bg-white/10 rounded text-sm mx-1">space</kbd> to reveal next question ({revealedCount}/{totalQuestions})
             </button>
           ) : (
-            <span className="text-white/40 text-sm">
+            <span className="text-white/40 text-base">
               Take a moment to reflect before sharing...
             </span>
           )}

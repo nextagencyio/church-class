@@ -28,14 +28,14 @@ export function PrayerSlide() {
         />
       </motion.div>
 
-      <div className="relative z-10 max-w-3xl mx-auto text-center">
+      <div className="relative z-10 max-w-5xl mx-auto text-center">
         {/* Label */}
         <motion.div
           variants={fadeUp}
           custom={0}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 mb-6"
         >
-          <span className="text-gold-400 text-sm font-semibold uppercase tracking-wider">Closing Prayer</span>
+          <span className="text-gold-400 text-base font-semibold uppercase tracking-wider">Closing Prayer</span>
         </motion.div>
 
         {/* Custom cross animation */}
@@ -46,7 +46,7 @@ export function PrayerSlide() {
         >
           <LottieAnimation
             src="/animations/cross-glow.json"
-            style={{ width: 100, height: 100, margin: '0 auto' }}
+            style={{ width: 120, height: 120, margin: '0 auto' }}
             speed={0.5}
           />
         </motion.div>
@@ -55,7 +55,7 @@ export function PrayerSlide() {
         <motion.h2
           variants={fadeUp}
           custom={0.15}
-          className="text-3xl md:text-5xl font-bold mb-8"
+          className="text-4xl md:text-6xl font-bold mb-8"
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
             textShadow: '0 2px 20px rgba(0,0,0,0.7)'
@@ -68,17 +68,17 @@ export function PrayerSlide() {
         <motion.div
           variants={scaleIn}
           custom={0.2}
-          className="bg-slate-900/70 backdrop-blur-md rounded-2xl p-8 md:p-10 border border-white/10 mb-8"
+          className="bg-slate-900/70 backdrop-blur-md rounded-2xl p-10 border border-white/10 mb-8"
         >
           <p
-            className="text-xl md:text-2xl text-white leading-relaxed mb-6"
+            className="text-2xl md:text-3xl text-white leading-relaxed mb-6"
             style={{ textShadow: '0 1px 8px rgba(0,0,0,0.5)' }}
           >
             Reread <span className="text-gold-400 font-semibold">Colossians 2:2</span>
           </p>
 
           <p
-            className="text-lg md:text-xl italic text-white/90 leading-relaxed mb-8"
+            className="text-xl md:text-2xl italic text-white/90 leading-relaxed mb-8"
             style={{ textShadow: '0 1px 8px rgba(0,0,0,0.5)' }}
           >
             "My goal is that they may be <strong className="text-white not-italic">encouraged in heart</strong> and{' '}
@@ -86,10 +86,10 @@ export function PrayerSlide() {
             <strong className="text-white not-italic">full riches of complete understanding</strong>, in order that they may know the mystery of God, namely, Christ..."
           </p>
 
-          <div className="w-16 h-px bg-gold-400/30 mx-auto mb-8" />
+          <div className="w-20 h-px bg-gold-400/30 mx-auto mb-8" />
 
           <p
-            className="text-lg text-gold-300"
+            className="text-xl text-gold-300"
             style={{ textShadow: '0 1px 8px rgba(0,0,0,0.5)' }}
           >
             Pray that the qualities Paul longed to see in the lives of the Colossians
@@ -109,7 +109,7 @@ export function PrayerSlide() {
               key={index}
               variants={scaleIn}
               custom={0.5 + index * 0.1}
-              className="px-4 py-2 rounded-full bg-gold-400/10 border border-gold-400/30 text-gold-300 text-sm"
+              className="px-5 py-2.5 rounded-full bg-gold-400/10 border border-gold-400/30 text-gold-300 text-lg"
             >
               {item}
             </motion.span>

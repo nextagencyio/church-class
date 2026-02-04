@@ -7,14 +7,14 @@ export function ScriptureVideoSlide() {
 
   return (
     <Slide variant="default">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center">
         {/* Label */}
         <motion.div
           variants={fadeUp}
           custom={0}
           className="mb-6"
         >
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-400/30 text-indigo-300 text-sm font-semibold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-indigo-500/10 border border-indigo-400/30 text-indigo-300 text-base font-semibold uppercase tracking-wider">
             Listen to the Passage
           </span>
         </motion.div>
@@ -23,13 +23,13 @@ export function ScriptureVideoSlide() {
         <motion.h2
           variants={fadeUp}
           custom={0.1}
-          className="text-3xl md:text-4xl font-bold text-gold-400 mb-8"
+          className="text-4xl md:text-5xl font-bold text-gold-400 mb-8"
           style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           Colossians 2:1-7
         </motion.h2>
 
-        {/* YouTube Shorts Embed - vertical format */}
+        {/* YouTube Shorts Embed - vertical format, larger for TV */}
         <motion.div
           variants={scaleIn}
           custom={0.2}
@@ -37,8 +37,8 @@ export function ScriptureVideoSlide() {
         >
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10">
             <iframe
-              width="315"
-              height="560"
+              width="360"
+              height="640"
               src={`https://www.youtube.com/embed/${videoId}?rel=0`}
               title="Colossians 2:1-7"
               frameBorder="0"
@@ -53,7 +53,7 @@ export function ScriptureVideoSlide() {
         <motion.p
           variants={fadeIn}
           custom={0.4}
-          className="mt-6 text-white/60 text-sm"
+          className="mt-6 text-white/60 text-lg"
         >
           Press play to hear the scripture reading
         </motion.p>

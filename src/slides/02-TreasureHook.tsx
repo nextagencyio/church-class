@@ -5,7 +5,7 @@ import { LottieAnimation } from '../components/LottieAnimation'
 export function TreasureHookSlide() {
   return (
     <Slide variant="default">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center">
         {/* Custom Treasure Map Animation */}
         <motion.div
           variants={fadeIn}
@@ -14,7 +14,7 @@ export function TreasureHookSlide() {
         >
           <LottieAnimation
             src="/animations/treasure-map.json"
-            style={{ width: 180, height: 180, margin: '0 auto' }}
+            style={{ width: 200, height: 200, margin: '0 auto' }}
             speed={0.8}
           />
         </motion.div>
@@ -23,7 +23,7 @@ export function TreasureHookSlide() {
         <motion.h2
           variants={fadeUp}
           custom={0.1}
-          className="text-3xl md:text-5xl font-bold mb-8"
+          className="text-4xl md:text-6xl font-bold mb-8"
           style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           The Treasure Map
@@ -32,7 +32,7 @@ export function TreasureHookSlide() {
         <motion.p
           variants={fadeUp}
           custom={0.2}
-          className="text-xl md:text-2xl text-white/80 leading-relaxed mb-12"
+          className="text-2xl md:text-3xl text-white/80 leading-relaxed mb-10"
         >
           In adventure stories like <em>Treasure Island</em>, the plot hinges on
           discovering an ancient map. Those who find it realize they could locate
@@ -44,21 +44,21 @@ export function TreasureHookSlide() {
         <motion.div
           variants={fadeIn}
           custom={0.3}
-          className="flex items-center justify-center gap-4 mb-10"
+          className="flex items-center justify-center gap-4 mb-8"
         >
-          <div className="w-20 h-px bg-gold-400/30" />
-          <span className="text-gold-400 text-xl">✦</span>
-          <div className="w-20 h-px bg-gold-400/30" />
+          <div className="w-24 h-px bg-gold-400/30" />
+          <span className="text-gold-400 text-2xl">✦</span>
+          <div className="w-24 h-px bg-gold-400/30" />
         </motion.div>
 
         <motion.div
           variants={stagger}
-          className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
+          className="bg-white/5 backdrop-blur-sm rounded-2xl p-10 border border-white/10"
         >
           <motion.p
             variants={fadeUp}
             custom={0.4}
-            className="text-lg md:text-xl text-gold-300 leading-relaxed"
+            className="text-xl md:text-2xl text-gold-300 leading-relaxed"
           >
             Paul has spoken of <strong>God's secret plan</strong>—a plan that has lain hidden
             like a map in a locked and dusty cupboard for ages and generations.

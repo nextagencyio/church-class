@@ -16,16 +16,16 @@ export function JoysAndConcernsSlide() {
 
   return (
     <Slide variant="default">
-      <div className="max-w-6xl mx-auto w-full">
+      <div className="max-w-7xl mx-auto w-full">
         {/* Header */}
-        <motion.div variants={fadeUp} custom={0} className="text-center mb-12">
+        <motion.div variants={fadeUp} custom={0} className="text-center mb-10">
           <h2
-            className="text-3xl md:text-5xl font-bold mb-4"
+            className="text-4xl md:text-6xl font-bold mb-4"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Paul's Heart for the Colossians
           </h2>
-          <p className="text-lg text-white/60">From verses 1-5</p>
+          <p className="text-xl text-white/60">From verses 1-5</p>
         </motion.div>
 
         {/* Two columns */}
@@ -34,21 +34,21 @@ export function JoysAndConcernsSlide() {
           <motion.div
             variants={slideFromLeft}
             custom={0.2}
-            className="bg-emerald-500/10 backdrop-blur-sm rounded-2xl p-8 border border-emerald-400/30"
+            className="bg-emerald-500/10 backdrop-blur-sm rounded-2xl p-10 border border-emerald-400/30"
           >
-            <div className="flex items-center gap-3 mb-6">
-              <span className="text-3xl">😊</span>
-              <h3 className="text-2xl font-bold text-emerald-400">His Joys</h3>
+            <div className="flex items-center gap-4 mb-8">
+              <span className="text-4xl">😊</span>
+              <h3 className="text-3xl font-bold text-emerald-400">His Joys</h3>
             </div>
-            <motion.ul variants={stagger} className="space-y-4">
+            <motion.ul variants={stagger} className="space-y-5">
               {joys.map((joy, index) => (
                 <motion.li
                   key={index}
                   variants={fadeUp}
                   custom={0.3 + index * 0.1}
-                  className="flex items-start gap-3 text-lg text-white/90"
+                  className="flex items-start gap-4 text-xl md:text-2xl text-white/90"
                 >
-                  <span className="text-emerald-400 mt-1">✓</span>
+                  <span className="text-emerald-400 mt-1 text-2xl">✓</span>
                   <span>{joy}</span>
                 </motion.li>
               ))}
@@ -59,21 +59,21 @@ export function JoysAndConcernsSlide() {
           <motion.div
             variants={slideFromRight}
             custom={0.2}
-            className="bg-amber-500/10 backdrop-blur-sm rounded-2xl p-8 border border-amber-400/30"
+            className="bg-amber-500/10 backdrop-blur-sm rounded-2xl p-10 border border-amber-400/30"
           >
-            <div className="flex items-center gap-3 mb-6">
-              <span className="text-3xl">⚠️</span>
-              <h3 className="text-2xl font-bold text-amber-400">His Concerns</h3>
+            <div className="flex items-center gap-4 mb-8">
+              <span className="text-4xl">⚠️</span>
+              <h3 className="text-3xl font-bold text-amber-400">His Concerns</h3>
             </div>
-            <motion.ul variants={stagger} className="space-y-4">
+            <motion.ul variants={stagger} className="space-y-5">
               {concerns.map((concern, index) => (
                 <motion.li
                   key={index}
                   variants={fadeUp}
                   custom={0.3 + index * 0.1}
-                  className="flex items-start gap-3 text-lg text-white/90"
+                  className="flex items-start gap-4 text-xl md:text-2xl text-white/90"
                 >
-                  <span className="text-amber-400 mt-1">!</span>
+                  <span className="text-amber-400 mt-1 text-2xl">!</span>
                   <span>{concern}</span>
                 </motion.li>
               ))}
@@ -87,7 +87,7 @@ export function JoysAndConcernsSlide() {
           custom={0.7}
           className="mt-10 text-center"
         >
-          <p className="text-white/50 text-lg">
+          <p className="text-white/50 text-xl">
             <span className="text-gold-400">Discussion:</span> On the "map" of your life, what were the signposts that led you to Christ?
           </p>
         </motion.div>

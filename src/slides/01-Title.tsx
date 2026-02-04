@@ -33,14 +33,14 @@ export function TitleSlide() {
         />
       </motion.div>
 
-      <div className="relative z-10 text-center max-w-5xl">
+      <div className="relative z-10 text-center max-w-7xl">
         {/* Chapter indicator */}
         <motion.div
           variants={fadeUp}
           custom={0}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 mb-6"
         >
-          <span className="text-gold-400 text-sm font-semibold">CHAPTER 3</span>
+          <span className="text-gold-400 text-base font-semibold tracking-wide">CHAPTER 3</span>
         </motion.div>
 
         {/* Custom sparkle animation */}
@@ -75,7 +75,7 @@ export function TitleSlide() {
         <motion.p
           variants={fadeUp}
           custom={0.2}
-          className="text-2xl md:text-3xl text-white/70 mb-10"
+          className="text-3xl md:text-4xl text-white/70 mb-10"
           style={{ textShadow: '0 1px 10px rgba(0,0,0,0.5)' }}
         >
           Colossians 2:1-7
@@ -96,7 +96,7 @@ export function TitleSlide() {
         <motion.p
           variants={fadeUp}
           custom={0.4}
-          className="text-lg md:text-xl text-white/60 italic max-w-2xl mx-auto"
+          className="text-xl md:text-2xl text-white/60 italic max-w-4xl mx-auto"
           style={{ textShadow: '0 1px 8px rgba(0,0,0,0.5)' }}
         >
           "In Christ are hidden all the treasures of wisdom and knowledge"

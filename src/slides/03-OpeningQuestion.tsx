@@ -4,30 +4,30 @@ import { Slide, fadeUp, scaleIn } from '../components/Slide'
 export function OpeningQuestionSlide() {
   return (
     <Slide variant="discussion">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center">
         {/* Label */}
         <motion.div
           variants={fadeUp}
           custom={0}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-400/30 mb-8"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-amber-500/10 border border-amber-400/30 mb-8"
         >
-          <span className="text-amber-400 text-sm font-semibold uppercase tracking-wider">Opening Discussion</span>
+          <span className="text-amber-400 text-base font-semibold uppercase tracking-wider">Opening Discussion</span>
         </motion.div>
 
         {/* Question icon */}
         <motion.div
           variants={scaleIn}
           custom={0.1}
-          className="w-20 h-20 rounded-full bg-gradient-to-br from-gold-400/20 to-amber-500/20 border border-gold-400/30 flex items-center justify-center mx-auto mb-8"
+          className="w-24 h-24 rounded-full bg-gradient-to-br from-gold-400/20 to-amber-500/20 border border-gold-400/30 flex items-center justify-center mx-auto mb-8"
         >
-          <span className="text-4xl">💎</span>
+          <span className="text-5xl">💎</span>
         </motion.div>
 
         {/* Main question */}
         <motion.h2
           variants={fadeUp}
           custom={0.2}
-          className="text-3xl md:text-5xl font-bold mb-6 text-white"
+          className="text-4xl md:text-6xl font-bold mb-8 text-white"
           style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           What is the most valuable thing
@@ -39,7 +39,7 @@ export function OpeningQuestionSlide() {
         <motion.div
           variants={fadeUp}
           custom={0.3}
-          className="space-y-4 text-xl md:text-2xl text-white/70"
+          className="space-y-5 text-2xl md:text-3xl text-white/70"
         >
           <p>What did you do with what you found?</p>
           <p>Who did you tell?</p>
@@ -51,9 +51,9 @@ export function OpeningQuestionSlide() {
           custom={0.5}
           className="mt-12 flex items-center justify-center gap-3"
         >
-          <div className="w-2 h-2 rounded-full bg-gold-400/50" />
-          <div className="w-2 h-2 rounded-full bg-gold-400/30" />
-          <div className="w-2 h-2 rounded-full bg-gold-400/20" />
+          <div className="w-3 h-3 rounded-full bg-gold-400/50" />
+          <div className="w-3 h-3 rounded-full bg-gold-400/30" />
+          <div className="w-3 h-3 rounded-full bg-gold-400/20" />
         </motion.div>
       </div>
     </Slide>
