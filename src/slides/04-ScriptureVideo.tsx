@@ -1,9 +1,32 @@
+import { useRef, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Slide, fadeUp, fadeIn, scaleIn } from '../components/Slide'
+import { Slide, fadeUp, scaleIn } from '../components/Slide'
 
 export function ScriptureVideoSlide() {
-  // Extract video ID from YouTube Shorts URL
   const videoId = 'TKHESkJHBYo'
+  const iframeRef = useRef<HTMLIFrameElement>(null)
+  const [isPlaying, setIsPlaying] = useState(false)
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === ' ') {
+        e.preventDefault()
+        e.stopImmediatePropagation()
+
+        if (iframeRef.current?.contentWindow) {
+          const command = isPlaying ? 'pauseVideo' : 'playVideo'
+          iframeRef.current.contentWindow.postMessage(
+            JSON.stringify({ event: 'command', func: command }),
+            '*'
+          )
+          setIsPlaying(!isPlaying)
+        }
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown, { capture: true })
+    return () => window.removeEventListener('keydown', handleKeyDown, { capture: true })
+  }, [isPlaying])
 
   return (
     <Slide variant="default">
@@ -37,9 +60,10 @@ export function ScriptureVideoSlide() {
         >
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10">
             <iframe
+              ref={iframeRef}
               width="360"
               height="640"
-              src={`https://www.youtube.com/embed/${videoId}?rel=0`}
+              src={`https://www.youtube.com/embed/${videoId}?rel=0&enablejsapi=1`}
               title="Colossians 2:1-7"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -51,11 +75,11 @@ export function ScriptureVideoSlide() {
 
         {/* Instruction */}
         <motion.p
-          variants={fadeIn}
+          variants={fadeUp}
           custom={0.4}
           className="mt-6 text-white/60 text-lg"
         >
-          Press play to hear the scripture reading
+          Press <span className="text-gold-400 font-semibold">spacebar</span> to {isPlaying ? 'pause' : 'play'}
         </motion.p>
       </div>
     </Slide>
