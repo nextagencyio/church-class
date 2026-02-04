@@ -5,16 +5,16 @@ import { LottieAnimation } from '../components/LottieAnimation'
 export function ThreeWordPicturesSlide() {
   const pictures = [
     {
-      lottie: 'https://lottie.host/0a5f5e0f-3f3f-4b3e-9b3c-0e5f5e0f3f3f/walking.json',
+      lottie: '/animations/journey-path.json',
       emoji: '🚶‍♂️',
       title: 'A Journey',
       verse: '"just as you received... continue to live"',
       description: 'Life with Christ is an ongoing walk, not a one-time decision',
       question: 'How has your journey with Christ unfolded?',
-      useLottie: false,
+      useLottie: true,
     },
     {
-      lottie: 'https://assets4.lottiefiles.com/packages/lf20_hzwndued.json',
+      lottie: '/animations/tree-roots.json',
       emoji: '🌳',
       title: 'Healthy Roots',
       verse: '"rooted... in him"',
@@ -23,7 +23,7 @@ export function ThreeWordPicturesSlide() {
       useLottie: true,
     },
     {
-      lottie: 'https://assets3.lottiefiles.com/packages/lf20_1cazwtnc.json',
+      lottie: '/animations/building.json',
       emoji: '🏗️',
       title: 'A Building',
       verse: '"built up in him"',
