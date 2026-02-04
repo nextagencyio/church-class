@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion'
 import { Slide, fadeUp, fadeIn, scaleIn } from '../components/Slide'
 import { LottieAnimation } from '../components/LottieAnimation'
+import { FloatingParticles } from '../components/FloatingParticles'
 
 export function TitleSlide() {
   return (
     <Slide variant="title" className="relative overflow-hidden">
+      {/* Floating gold particles */}
+      <FloatingParticles count={25} />
+
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -68,7 +72,7 @@ export function TitleSlide() {
         >
           <span className="text-white">God's Treasure</span>
           <br />
-          <span className="text-gold-400" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.7)' }}>Revealed</span>
+          <span className="text-shimmer" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.7)' }}>Revealed</span>
         </motion.h1>
 
         {/* Scripture reference */}

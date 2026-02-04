@@ -26,27 +26,52 @@ export function ScriptureReadingSlide() {
           Colossians 2:1-7
         </motion.h2>
 
-        {/* Scripture text */}
+        {/* Scripture text with staggered reveal */}
         <motion.div
           variants={fadeIn}
           custom={0.2}
           className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-white/10"
         >
-          <p className="text-xl md:text-2xl text-white/90 leading-relaxed italic">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="text-xl md:text-2xl text-white/90 leading-relaxed italic"
+          >
             <sup className="text-gold-400/60 text-base">1</sup> I want you to know how hard I am contending for you and for those at Laodicea, and for all who have not met me personally. <sup className="text-gold-400/60 text-base">2</sup> My goal is that they may be encouraged in heart and united in love, so that they may have the full riches of complete understanding, in order that they may know the mystery of God, namely, Christ, <sup className="text-gold-400/60 text-base">3</sup> <strong className="text-gold-300 not-italic">in whom are hidden all the treasures of wisdom and knowledge.</strong>
-          </p>
+          </motion.p>
 
-          <div className="my-6 border-t border-white/10" />
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ delay: 0.8, duration: 0.5 }}
+            className="my-6 border-t border-white/10 origin-left"
+          />
 
-          <p className="text-xl md:text-2xl text-white/90 leading-relaxed italic">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.0, duration: 0.8 }}
+            className="text-xl md:text-2xl text-white/90 leading-relaxed italic"
+          >
             <sup className="text-gold-400/60 text-base">4</sup> I tell you this so that no one may deceive you by fine-sounding arguments. <sup className="text-gold-400/60 text-base">5</sup> For though I am absent from you in body, I am present with you in spirit and delight to see how disciplined you are and how firm your faith in Christ is.
-          </p>
+          </motion.p>
 
-          <div className="my-6 border-t border-white/10" />
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ delay: 1.5, duration: 0.5 }}
+            className="my-6 border-t border-white/10 origin-left"
+          />
 
-          <p className="text-xl md:text-2xl text-white/90 leading-relaxed italic">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.7, duration: 0.8 }}
+            className="text-xl md:text-2xl text-white/90 leading-relaxed italic"
+          >
             <sup className="text-gold-400/60 text-base">6</sup> So then, just as you received Christ Jesus as Lord, continue to live your lives in him, <sup className="text-gold-400/60 text-base">7</sup> <strong className="text-gold-300 not-italic">rooted and built up in him</strong>, strengthened in the faith as you were taught, and overflowing with thankfulness.
-          </p>
+          </motion.p>
         </motion.div>
       </div>
     </Slide>

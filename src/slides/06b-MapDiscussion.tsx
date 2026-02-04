@@ -5,13 +5,19 @@ export function MapDiscussionSlide() {
   return (
     <Slide variant="discussion">
       <div className="max-w-5xl mx-auto text-center">
-        {/* Big discussion icon */}
+        {/* Big discussion icon with float animation */}
         <motion.div
           variants={scaleIn}
           custom={0}
           className="mb-8"
         >
-          <span className="text-8xl">🗺️</span>
+          <motion.span
+            className="text-8xl inline-block"
+            animate={{ y: [0, -10, 0] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+          >
+            🗺️
+          </motion.span>
         </motion.div>
 
         {/* Label */}

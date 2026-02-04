@@ -20,7 +20,7 @@ export function KingJesusSlide() {
           >
             The Theme Throughout:
             <br />
-            <span className="text-gold-400">King Jesus</span>
+            <span className="text-shimmer">King Jesus</span>
           </h2>
           <p className="text-2xl text-white/60">Paul's answer to every question</p>
         </motion.div>
@@ -35,9 +35,16 @@ export function KingJesusSlide() {
               key={index}
               variants={scaleIn}
               custom={0.1 + index * 0.1}
-              className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 flex items-center gap-6 hover:bg-white/10 transition-colors"
+              whileHover={{ scale: 1.02, boxShadow: "0 0 30px rgba(212, 175, 55, 0.2)" }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 flex items-center gap-6 hover:bg-white/10 hover:border-gold-400/30 cursor-default"
             >
-              <span className="text-5xl">{point.emoji}</span>
+              <motion.span
+                className="text-5xl"
+                whileHover={{ scale: 1.2, rotate: 5 }}
+              >
+                {point.emoji}
+              </motion.span>
               <p className="text-2xl md:text-3xl text-white/90">{point.text}</p>
             </motion.div>
           ))}

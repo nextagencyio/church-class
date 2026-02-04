@@ -33,3 +33,29 @@
     font-family: var(--font-display);
   }
 }
+
+/* Shimmer animation for gold text */
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.text-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-gold-400) 0%,
+    var(--color-gold-200) 25%,
+    var(--color-gold-300) 50%,
+    var(--color-gold-200) 75%,
+    var(--color-gold-400) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s linear infinite;
+}

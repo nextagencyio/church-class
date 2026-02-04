@@ -5,13 +5,19 @@ export function CenterDiscussionSlide() {
   return (
     <Slide variant="discussion">
       <div className="max-w-5xl mx-auto text-center">
-        {/* Big discussion icon */}
+        {/* Big discussion icon with pulse animation */}
         <motion.div
           variants={scaleIn}
           custom={0}
           className="mb-8"
         >
-          <span className="text-8xl">🌍</span>
+          <motion.span
+            className="text-8xl inline-block"
+            animate={{ scale: [1, 1.05, 1] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          >
+            🌍
+          </motion.span>
         </motion.div>
 
         {/* Label */}

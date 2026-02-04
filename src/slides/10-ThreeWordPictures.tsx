@@ -51,12 +51,18 @@ export function ThreeWordPicturesSlide() {
               key={index}
               variants={scaleIn}
               custom={0.2 + index * 0.15}
-              className="bg-gradient-to-b from-white/10 to-white/5 rounded-2xl p-8 border border-white/10 flex flex-col"
+              whileHover={{ scale: 1.03, boxShadow: "0 0 40px rgba(212, 175, 55, 0.15)" }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="bg-gradient-to-b from-white/10 to-white/5 rounded-2xl p-8 border border-white/10 hover:border-gold-400/30 flex flex-col cursor-default"
             >
-              {/* Icon */}
-              <div className="h-24 mb-3 flex items-center justify-center">
+              {/* Icon with hover animation */}
+              <motion.div
+                className="h-24 mb-3 flex items-center justify-center"
+                whileHover={{ scale: 1.15, rotate: 5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
                 {item.icon}
-              </div>
+              </motion.div>
 
               {/* Title */}
               <h3 className="text-2xl md:text-3xl font-bold text-gold-400 mb-2">{item.title}</h3>

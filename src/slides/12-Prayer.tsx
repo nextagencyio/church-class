@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion'
 import { Slide, fadeUp, fadeIn, scaleIn } from '../components/Slide'
 import { LottieAnimation } from '../components/LottieAnimation'
+import { FloatingParticles } from '../components/FloatingParticles'
 
 export function PrayerSlide() {
   return (
     <Slide variant="title" className="relative overflow-hidden">
+      {/* Floating gold particles */}
+      <FloatingParticles count={20} />
+
       {/* Background glow */}
       <motion.div
         variants={fadeIn}
@@ -55,7 +59,7 @@ export function PrayerSlide() {
         <motion.h2
           variants={fadeUp}
           custom={0.15}
-          className="text-4xl md:text-6xl font-bold mb-8"
+          className="text-4xl md:text-6xl font-bold mb-8 text-shimmer"
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
             textShadow: '0 2px 20px rgba(0,0,0,0.7)'
