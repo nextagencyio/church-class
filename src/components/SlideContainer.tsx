@@ -139,29 +139,6 @@ export function SlideContainer({ children }: SlideContainerProps) {
         </motion.div>
       </AnimatePresence>
 
-      {/* Navigation arrows */}
-      <button
-        onClick={() => navigate(-1)}
-        disabled={currentSlide === 0}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 disabled:opacity-30 disabled:cursor-not-allowed transition-all z-50"
-        aria-label="Previous slide"
-      >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-
-      <button
-        onClick={() => navigate(1)}
-        disabled={currentSlide === totalSlides - 1}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 disabled:opacity-30 disabled:cursor-not-allowed transition-all z-50"
-        aria-label="Next slide"
-      >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-
       {/* Slide dots */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-50">
         {children.map((_, index) => (
