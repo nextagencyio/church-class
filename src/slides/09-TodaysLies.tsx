@@ -73,25 +73,6 @@ export function TodaysLiesSlide() {
           </div>
         </motion.div>
 
-        {/* Reveal hint or reflection prompt */}
-        <motion.div
-          variants={fadeUp}
-          custom={0.6}
-          className="mt-10 text-center"
-        >
-          {revealedCount < totalQuestions ? (
-            <button
-              onClick={revealNext}
-              className="text-white/50 text-base hover:text-white/70 transition-colors cursor-pointer"
-            >
-              Press <kbd className="px-2 py-1 bg-white/10 rounded text-sm mx-1">→</kbd> or <kbd className="px-2 py-1 bg-white/10 rounded text-sm mx-1">space</kbd> to reveal next question ({revealedCount}/{totalQuestions})
-            </button>
-          ) : (
-            <span className="text-white/40 text-base">
-              Take a moment to reflect before sharing...
-            </span>
-          )}
-        </motion.div>
       </div>
     </Slide>
   )

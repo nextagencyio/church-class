@@ -73,14 +73,6 @@ export function ScriptureVideoSlide() {
           </div>
         </motion.div>
 
-        {/* Instruction */}
-        <motion.p
-          variants={fadeUp}
-          custom={0.4}
-          className="mt-6 text-white/60 text-lg"
-        >
-          Press <span className="text-gold-400 font-semibold">spacebar</span> to {isPlaying ? 'pause' : 'play'}
-        </motion.p>
       </div>
     </Slide>
   )

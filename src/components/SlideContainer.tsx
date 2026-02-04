@@ -183,10 +183,6 @@ export function SlideContainer({ children }: SlideContainerProps) {
         {currentSlide + 1} / {totalSlides}
       </div>
 
-      {/* Keyboard hints */}
-      <div className="absolute bottom-6 left-6 text-xs text-white/30 z-50 hidden md:block">
-        Use arrow keys or swipe to navigate
-      </div>
     </div>
   )
 }

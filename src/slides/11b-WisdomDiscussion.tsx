@@ -50,14 +50,6 @@ export function WisdomDiscussionSlide() {
           <div className="w-16 h-px bg-gold-400/30" />
         </motion.div>
 
-        {/* Reflection prompt */}
-        <motion.p
-          variants={fadeUp}
-          custom={0.4}
-          className="mt-8 text-xl text-white/50"
-        >
-          Take a moment to reflect before sharing...
-        </motion.p>
       </div>
     </Slide>
   )
