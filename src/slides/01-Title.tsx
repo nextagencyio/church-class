@@ -24,15 +24,15 @@ export function TitleSlide() {
         />
       </div>
 
-      {/* Custom glow animation - positioned at bottom behind content */}
+      {/* Custom glow animation - positioned at very bottom, pushed down */}
       <motion.div
         variants={fadeIn}
         custom={0.3}
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 opacity-10 pointer-events-none z-0"
+        className="absolute -bottom-32 left-1/2 -translate-x-1/2 opacity-10 pointer-events-none z-0"
       >
         <LottieAnimation
           src="/animations/glow-pulse.json"
-          style={{ width: 350, height: 350 }}
+          style={{ width: 300, height: 300 }}
           speed={0.5}
         />
       </motion.div>
@@ -98,8 +98,8 @@ export function TitleSlide() {
 
         {/* Subtitle/Theme with typewriter effect */}
         <p
-          className="text-xl md:text-2xl text-white/60 italic max-w-4xl mx-auto"
-          style={{ textShadow: '0 1px 8px rgba(0,0,0,0.5)' }}
+          className="text-xl md:text-2xl text-white/70 italic max-w-4xl mx-auto"
+          style={{ textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)' }}
         >
           <Typewriter
             text={'"In Christ are hidden all the treasures of wisdom and knowledge"'}
