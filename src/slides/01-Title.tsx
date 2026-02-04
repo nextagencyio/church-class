@@ -23,21 +23,20 @@ export function TitleSlide() {
         />
       </div>
 
-      {/* Custom glow animation - moved lower and more subtle */}
+      {/* Custom glow animation - positioned at bottom behind content */}
       <motion.div
         variants={fadeIn}
         custom={0.3}
-        className="absolute inset-0 flex items-end justify-center opacity-15 pointer-events-none"
-        style={{ paddingBottom: '5%' }}
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 opacity-10 pointer-events-none z-0"
       >
         <LottieAnimation
           src="/animations/glow-pulse.json"
-          style={{ width: 400, height: 400 }}
+          style={{ width: 350, height: 350 }}
           speed={0.5}
         />
       </motion.div>
 
-      <div className="relative z-10 text-center max-w-7xl">
+      <div className="relative z-20 text-center max-w-7xl">
         {/* Chapter indicator */}
         <motion.div
           variants={fadeUp}

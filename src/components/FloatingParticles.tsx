@@ -24,7 +24,7 @@ export function FloatingParticles({ count = 20 }: { count?: number }) {
   const particles = generateParticles(count)
 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
