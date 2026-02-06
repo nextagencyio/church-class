@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import { motion } from 'framer-motion'
 
 interface SlideProps {
@@ -7,7 +7,7 @@ interface SlideProps {
   variant?: 'default' | 'scripture' | 'discussion' | 'title'
 }
 
-const smoothEase = [0.22, 1, 0.36, 1]
+const smoothEase: [number, number, number, number] = [0.22, 1, 0.36, 1]
 
 export const fadeUp = {
   hidden: { opacity: 0, y: 40, filter: 'blur(4px)' },

@@ -12,7 +12,7 @@ export function Typewriter({ text, className = '', delay = 0, speed = 0.05 }: Ty
 
   const container = {
     hidden: { opacity: 0 },
-    visible: (i = 1) => ({
+    visible: () => ({
       opacity: 1,
       transition: { staggerChildren: speed, delayChildren: delay },
     }),
@@ -24,7 +24,7 @@ export function Typewriter({ text, className = '', delay = 0, speed = 0.05 }: Ty
       opacity: 1,
       y: 0,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         damping: 12,
         stiffness: 100,
       },

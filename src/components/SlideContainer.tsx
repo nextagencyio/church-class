@@ -1,11 +1,12 @@
-import { useState, useEffect, useCallback, ReactNode } from 'react'
+import { useState, useEffect, useCallback } from 'react'
+import type { ReactNode } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 interface SlideContainerProps {
   children: ReactNode[]
 }
 
-const smoothEase = [0.22, 1, 0.36, 1]
+const smoothEase: [number, number, number, number] = [0.22, 1, 0.36, 1]
 
 const slideVariants = {
   enter: (direction: number) => ({
