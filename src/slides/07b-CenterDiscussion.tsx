@@ -33,16 +33,12 @@ export function CenterDiscussionSlide() {
         <motion.h2
           variants={fadeUp}
           custom={0.2}
-          className="text-4xl md:text-6xl font-bold text-white leading-tight mb-8"
+          className="text-4xl md:text-5xl font-bold text-white leading-snug mb-8"
           style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
-          Have you had <span className="text-gold-400">difficulties</span> with the idea
+          Have you had <span className="text-gold-400">difficulties</span> with the idea that Jesus Christ is not one alternative way to have a spiritual experience
           <br />
-          that Jesus Christ is not one alternative way
-          <br />
-          to have a spiritual experience but is
-          <br />
-          the <span className="text-gold-400">center of reality</span>?
+          but is the <span className="text-gold-400">center of reality</span>?
         </motion.h2>
 
         {/* Decorative element */}
