@@ -25,7 +25,7 @@ export function JoysAndConcernsSlide() {
           >
             Paul's Heart for the Colossians
           </h2>
-          <p className="text-2xl text-white/60">From verses 1-5</p>
+          <p className="text-3xl text-white/60">From verses 1-5</p>
         </motion.div>
 
         {/* Two columns */}
@@ -46,7 +46,7 @@ export function JoysAndConcernsSlide() {
                   key={index}
                   variants={fadeUp}
                   custom={0.3 + index * 0.1}
-                  className="flex items-start gap-4 text-2xl md:text-3xl text-white/90"
+                  className="flex items-start gap-4 text-3xl md:text-4xl text-white/90"
                 >
                   <span className="text-emerald-400 mt-1 text-3xl">✓</span>
                   <span>{joy}</span>
@@ -71,7 +71,7 @@ export function JoysAndConcernsSlide() {
                   key={index}
                   variants={fadeUp}
                   custom={0.3 + index * 0.1}
-                  className="flex items-start gap-4 text-2xl md:text-3xl text-white/90"
+                  className="flex items-start gap-4 text-3xl md:text-4xl text-white/90"
                 >
                   <span className="text-amber-400 mt-1 text-3xl">!</span>
                   <span>{concern}</span>

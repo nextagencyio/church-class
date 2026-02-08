@@ -11,7 +11,7 @@ export function KingJesusSlide() {
 
   return (
     <Slide variant="default">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div variants={fadeUp} custom={0} className="text-center mb-10">
           <h2
@@ -56,7 +56,7 @@ export function KingJesusSlide() {
           custom={0.6}
           className="mt-10 text-center"
         >
-          <p className="text-2xl md:text-3xl text-gold-300 italic max-w-4xl mx-auto">
+          <p className="text-3xl md:text-4xl text-gold-300 italic max-w-5xl mx-auto">
             "The treasure that was hidden, to which the map would lead them,
             <br />
             was <strong>Jesus Christ himself</strong>."

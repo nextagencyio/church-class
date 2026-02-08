@@ -44,7 +44,7 @@ export function TitleSlide() {
           custom={0}
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 mb-6"
         >
-          <span className="text-gold-400 text-lg font-semibold tracking-wide">CHAPTER 3</span>
+          <span className="text-gold-400 text-xl font-semibold tracking-wide">CHAPTER 3</span>
         </motion.div>
 
         {/* Custom sparkle animation */}

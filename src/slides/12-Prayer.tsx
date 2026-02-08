@@ -32,14 +32,14 @@ export function PrayerSlide() {
         />
       </motion.div>
 
-      <div className="relative z-10 max-w-5xl mx-auto text-center">
+      <div className="relative z-10 max-w-6xl mx-auto text-center">
         {/* Label */}
         <motion.div
           variants={fadeUp}
           custom={0}
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 mb-6"
         >
-          <span className="text-gold-400 text-lg font-semibold uppercase tracking-wider">Closing Prayer</span>
+          <span className="text-gold-400 text-xl font-semibold uppercase tracking-wider">Closing Prayer</span>
         </motion.div>
 
         {/* Custom cross animation */}
@@ -94,7 +94,7 @@ export function PrayerSlide() {
           <div className="w-20 h-px bg-gold-400/30 mx-auto mb-8" />
 
           <p
-            className="text-2xl text-gold-300"
+            className="text-2xl md:text-3xl text-gold-300"
             style={{ textShadow: '0 1px 8px rgba(0,0,0,0.5)' }}
           >
             Pray that the qualities Paul longed to see in the lives of the Colossians
@@ -114,7 +114,7 @@ export function PrayerSlide() {
               key={index}
               variants={scaleIn}
               custom={0.5 + index * 0.1}
-              className="px-5 py-2.5 rounded-full bg-gold-400/10 border border-gold-400/30 text-gold-300 text-xl"
+              className="px-5 py-2.5 rounded-full bg-gold-400/10 border border-gold-400/30 text-gold-300 text-2xl"
             >
               {item}
             </motion.span>

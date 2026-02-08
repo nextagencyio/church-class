@@ -28,7 +28,7 @@ export function WisdomAndKnowledgeSlide() {
               <span className="text-5xl">📚</span>
               <h3 className="text-4xl font-bold text-white/80">Information</h3>
             </div>
-            <ul className="space-y-4 text-2xl text-white/70">
+            <ul className="space-y-4 text-3xl md:text-4xl text-white/70">
               <li className="flex items-start gap-3">
                 <span className="text-slate-400">•</span>
                 Mountains of data
@@ -57,7 +57,7 @@ export function WisdomAndKnowledgeSlide() {
               <span className="text-5xl">✨</span>
               <h3 className="text-4xl font-bold text-gold-400">Wisdom & Knowledge</h3>
             </div>
-            <ul className="space-y-4 text-2xl text-white/80">
+            <ul className="space-y-4 text-3xl md:text-4xl text-white/80">
               <li className="flex items-start gap-3">
                 <span className="text-gold-400">✦</span>
                 Hidden treasures in Christ
@@ -87,7 +87,7 @@ export function WisdomAndKnowledgeSlide() {
           <p className="text-3xl md:text-4xl italic text-white/90 mb-4">
             "In Christ are hidden <strong className="text-gold-300 not-italic">all the treasures</strong> of wisdom and knowledge"
           </p>
-          <p className="text-2xl text-indigo-300">— Colossians 2:3</p>
+          <p className="text-3xl text-indigo-300">— Colossians 2:3</p>
         </motion.div>
       </div>
     </Slide>

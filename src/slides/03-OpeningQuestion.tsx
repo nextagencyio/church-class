@@ -4,14 +4,14 @@ import { Slide, fadeUp, scaleIn } from '../components/Slide'
 export function OpeningQuestionSlide() {
   return (
     <Slide variant="discussion">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-7xl mx-auto text-center">
         {/* Label */}
         <motion.div
           variants={fadeUp}
           custom={0}
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-amber-500/10 border border-amber-400/30 mb-8"
         >
-          <span className="text-amber-400 text-lg font-semibold uppercase tracking-wider">Opening Discussion</span>
+          <span className="text-amber-400 text-xl font-semibold uppercase tracking-wider">Opening Discussion</span>
         </motion.div>
 
         {/* Question icon */}

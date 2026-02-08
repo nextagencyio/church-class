@@ -5,7 +5,7 @@ import { LottieAnimation } from '../components/LottieAnimation'
 export function TreasureHookSlide() {
   return (
     <Slide variant="default">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-7xl mx-auto text-center">
         {/* Custom Treasure Map Animation */}
         <motion.div
           variants={fadeIn}
@@ -58,7 +58,7 @@ export function TreasureHookSlide() {
           <motion.p
             variants={fadeUp}
             custom={0.4}
-            className="text-2xl md:text-3xl text-gold-300 leading-relaxed"
+            className="text-3xl md:text-4xl text-gold-300 leading-relaxed"
           >
             Paul has spoken of <strong>God's secret plan</strong>—a plan that has lain hidden
             like a map in a locked and dusty cupboard for ages and generations.

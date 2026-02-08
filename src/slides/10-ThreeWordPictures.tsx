@@ -32,7 +32,7 @@ export function ThreeWordPicturesSlide() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div variants={fadeUp} custom={0} className="text-center mb-8">
-          <p className="text-white/50 text-xl mb-2">Colossians 2:6-7</p>
+          <p className="text-white/50 text-2xl mb-2">Colossians 2:6-7</p>
           <h2
             className="text-5xl md:text-7xl font-bold"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
@@ -68,14 +68,14 @@ export function ThreeWordPicturesSlide() {
               <h3 className="text-3xl md:text-4xl font-bold text-gold-400 mb-2">{item.title}</h3>
 
               {/* Verse */}
-              <p className="text-lg text-indigo-300 italic mb-4">{item.verse}</p>
+              <p className="text-2xl text-indigo-300 italic mb-4">{item.verse}</p>
 
               {/* Description */}
-              <p className="text-xl text-white/70 mb-6 flex-grow">{item.description}</p>
+              <p className="text-2xl text-white/70 mb-6 flex-grow">{item.description}</p>
 
               {/* Question */}
               <div className="bg-white/5 rounded-lg p-4 border-l-2 border-gold-400">
-                <p className="text-lg text-white/80">
+                <p className="text-2xl text-white/80">
                   <span className="text-gold-400">💭</span> {item.question}
                 </p>
               </div>
@@ -89,7 +89,7 @@ export function ThreeWordPicturesSlide() {
           custom={0.7}
           className="mt-8 text-center"
         >
-          <p className="text-2xl text-white/60">
+          <p className="text-2xl md:text-3xl text-white/60">
             <span className="text-gold-400 font-semibold">What do they have in common?</span>
             <br />
             All three describe <em>ongoing, living processes</em> — not static states

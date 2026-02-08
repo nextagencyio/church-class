@@ -140,27 +140,6 @@ export function SlideContainer({ children }: SlideContainerProps) {
         </motion.div>
       </AnimatePresence>
 
-      {/* Slide dots */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-50">
-        {children.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`w-2.5 h-2.5 rounded-full transition-all ${
-              index === currentSlide
-                ? 'bg-gold-400 w-8 dot-pulse'
-                : 'bg-white/30 hover:bg-white/50'
-            }`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
-      </div>
-
-      {/* Slide counter */}
-      <div className="absolute bottom-6 right-6 text-sm text-white/50 font-mono z-50">
-        {currentSlide + 1} / {totalSlides}
-      </div>
-
     </div>
   )
 }

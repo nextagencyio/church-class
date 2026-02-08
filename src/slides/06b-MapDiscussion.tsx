@@ -4,7 +4,7 @@ import { Slide, fadeUp, scaleIn } from '../components/Slide'
 export function MapDiscussionSlide() {
   return (
     <Slide variant="discussion">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center">
         {/* Big discussion icon with float animation */}
         <motion.div
           variants={scaleIn}

@@ -4,7 +4,7 @@ import { Slide, fadeUp, scaleIn } from '../components/Slide'
 export function ProtectionDiscussionSlide() {
   return (
     <Slide variant="discussion">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center">
         {/* Big discussion icon */}
         <motion.div
           variants={scaleIn}
@@ -33,7 +33,7 @@ export function ProtectionDiscussionSlide() {
         <motion.p
           variants={fadeUp}
           custom={0.15}
-          className="text-2xl text-white/60 mb-6 italic"
+          className="text-3xl text-white/60 mb-6 italic"
         >
           Paul warns about "plausible words" designed to deceive...
         </motion.p>
@@ -56,7 +56,7 @@ export function ProtectionDiscussionSlide() {
         <motion.p
           variants={fadeUp}
           custom={0.25}
-          className="text-xl text-white/50"
+          className="text-3xl text-white/50"
         >
           (vv. 2-5)
         </motion.p>

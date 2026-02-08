@@ -4,7 +4,7 @@ import { Slide, fadeUp, scaleIn } from '../components/Slide'
 export function JoysDiscussionSlide() {
   return (
     <Slide variant="discussion">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center">
         {/* Big discussion icon */}
         <motion.div
           variants={scaleIn}
@@ -33,7 +33,7 @@ export function JoysDiscussionSlide() {
         <motion.p
           variants={fadeUp}
           custom={0.15}
-          className="text-2xl text-white/60 mb-6"
+          className="text-3xl text-white/60 mb-6"
         >
           From verses 1-5...
         </motion.p>

@@ -98,7 +98,7 @@ const backgroundVariants = {
 export function Slide({ children, className = '', variant = 'default' }: SlideProps) {
   return (
     <motion.div
-      className={`w-full h-full flex flex-col items-center justify-center px-12 pt-8 pb-20 ${backgroundVariants[variant]} ${className}`}
+      className={`w-full h-full flex flex-col items-center justify-center px-12 py-8 ${backgroundVariants[variant]} ${className}`}
       initial="hidden"
       animate="visible"
     >
