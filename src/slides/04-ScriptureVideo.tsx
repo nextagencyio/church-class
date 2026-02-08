@@ -58,7 +58,7 @@ export function ScriptureVideoSlide() {
             📜
           </motion.div>
           <div className="w-px h-32 bg-gradient-to-b from-gold-400/30 to-transparent" />
-          <span className="text-gold-400/40 text-sm uppercase tracking-widest rotate-180" style={{ writingMode: 'vertical-rl' }}>
+          <span className="text-gold-400/40 text-base uppercase tracking-widest rotate-180" style={{ writingMode: 'vertical-rl' }}>
             The Word of God
           </span>
         </motion.div>
@@ -71,7 +71,7 @@ export function ScriptureVideoSlide() {
             custom={0}
             className="mb-6"
           >
-            <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-indigo-500/10 border border-indigo-400/30 text-indigo-300 text-base font-semibold uppercase tracking-wider">
+            <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-indigo-500/10 border border-indigo-400/30 text-indigo-300 text-lg font-semibold uppercase tracking-wider">
               Listen to the Passage
             </span>
           </motion.div>
@@ -80,7 +80,7 @@ export function ScriptureVideoSlide() {
           <motion.h2
             variants={fadeUp}
             custom={0.1}
-            className="text-4xl md:text-5xl font-bold text-gold-400 mb-8"
+            className="text-5xl md:text-6xl font-bold text-gold-400 mb-8"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Colossians 2:1-7
@@ -120,7 +120,7 @@ export function ScriptureVideoSlide() {
           custom={0.5}
           className="hidden lg:flex flex-col items-center gap-6 text-white/20"
         >
-          <span className="text-gold-400/40 text-sm uppercase tracking-widest" style={{ writingMode: 'vertical-rl' }}>
+          <span className="text-gold-400/40 text-base uppercase tracking-widest" style={{ writingMode: 'vertical-rl' }}>
             Colossians
           </span>
           <div className="w-px h-32 bg-gradient-to-b from-transparent to-gold-400/30" />

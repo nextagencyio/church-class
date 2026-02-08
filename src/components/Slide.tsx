@@ -113,7 +113,7 @@ export function SlideTitle({ children, className = '' }: { children: ReactNode; 
     <motion.h1
       variants={fadeUp}
       custom={0}
-      className={`text-5xl md:text-7xl lg:text-8xl font-bold text-center leading-tight ${className}`}
+      className={`text-6xl md:text-8xl lg:text-9xl font-bold text-center leading-tight ${className}`}
       style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
     >
       {children}
@@ -126,7 +126,7 @@ export function SlideSubtitle({ children, className = '' }: { children: ReactNod
     <motion.p
       variants={fadeUp}
       custom={0.1}
-      className={`text-2xl md:text-3xl text-white/70 text-center max-w-5xl ${className}`}
+      className={`text-3xl md:text-4xl text-white/70 text-center max-w-5xl ${className}`}
     >
       {children}
     </motion.p>
@@ -140,10 +140,10 @@ export function ScriptureVerse({ reference, children, className = '' }: { refere
       custom={0.2}
       className={`max-w-6xl mx-auto ${className}`}
     >
-      <p className="text-3xl md:text-4xl lg:text-5xl italic text-white/90 leading-relaxed text-center mb-6">
+      <p className="text-4xl md:text-5xl lg:text-6xl italic text-white/90 leading-relaxed text-center mb-6">
         "{children}"
       </p>
-      <footer className="text-gold-400 text-xl md:text-2xl text-center font-semibold">
+      <footer className="text-gold-400 text-2xl md:text-3xl text-center font-semibold">
         — {reference}
       </footer>
     </motion.blockquote>
@@ -161,7 +161,7 @@ export function BulletList({ items, className = '' }: { items: string[]; classNa
           key={index}
           variants={fadeUp}
           custom={0.1 * index}
-          className="flex items-start gap-4 text-xl md:text-2xl text-white/80"
+          className="flex items-start gap-4 text-2xl md:text-3xl text-white/80"
         >
           <span className="text-gold-400 mt-1.5">✦</span>
           <span>{item}</span>
@@ -178,10 +178,10 @@ export function DiscussionQuestion({ number, children, className = '' }: { numbe
       custom={0.1 * number}
       className={`flex items-start gap-5 ${className}`}
     >
-      <span className="flex-shrink-0 w-12 h-12 rounded-full bg-gold-500/20 border border-gold-400/50 flex items-center justify-center text-gold-400 font-bold text-xl">
+      <span className="flex-shrink-0 w-14 h-14 rounded-full bg-gold-500/20 border border-gold-400/50 flex items-center justify-center text-gold-400 font-bold text-3xl">
         {number}
       </span>
-      <p className="text-xl md:text-2xl text-white/90 pt-2 leading-relaxed">{children}</p>
+      <p className="text-3xl md:text-4xl text-white/90 pt-2 leading-relaxed">{children}</p>
     </motion.div>
   )
 }

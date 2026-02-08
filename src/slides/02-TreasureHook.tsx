@@ -23,7 +23,7 @@ export function TreasureHookSlide() {
         <motion.h2
           variants={fadeUp}
           custom={0.1}
-          className="text-4xl md:text-6xl font-bold mb-8"
+          className="text-5xl md:text-7xl font-bold mb-8"
           style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           The Treasure Map
@@ -32,7 +32,7 @@ export function TreasureHookSlide() {
         <motion.p
           variants={fadeUp}
           custom={0.2}
-          className="text-2xl md:text-3xl text-white/80 leading-relaxed mb-10"
+          className="text-3xl md:text-4xl text-white/80 leading-relaxed mb-10"
         >
           In adventure stories like <em>Treasure Island</em>, the plot hinges on
           discovering an ancient map. Those who find it realize they could locate
@@ -58,7 +58,7 @@ export function TreasureHookSlide() {
           <motion.p
             variants={fadeUp}
             custom={0.4}
-            className="text-xl md:text-2xl text-gold-300 leading-relaxed"
+            className="text-2xl md:text-3xl text-gold-300 leading-relaxed"
           >
             Paul has spoken of <strong>God's secret plan</strong>—a plan that has lain hidden
             like a map in a locked and dusty cupboard for ages and generations.

@@ -11,7 +11,7 @@ export function OpeningQuestionSlide() {
           custom={0}
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-amber-500/10 border border-amber-400/30 mb-8"
         >
-          <span className="text-amber-400 text-base font-semibold uppercase tracking-wider">Opening Discussion</span>
+          <span className="text-amber-400 text-lg font-semibold uppercase tracking-wider">Opening Discussion</span>
         </motion.div>
 
         {/* Question icon */}
@@ -27,7 +27,7 @@ export function OpeningQuestionSlide() {
         <motion.h2
           variants={fadeUp}
           custom={0.2}
-          className="text-4xl md:text-6xl font-bold mb-8 text-white"
+          className="text-5xl md:text-7xl font-bold mb-8 text-white"
           style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           What is the most valuable thing
@@ -39,7 +39,7 @@ export function OpeningQuestionSlide() {
         <motion.div
           variants={fadeUp}
           custom={0.3}
-          className="space-y-5 text-2xl md:text-3xl text-white/70"
+          className="space-y-5 text-3xl md:text-4xl text-white/70"
         >
           <p>What did you do with what you found?</p>
           <p>Who did you tell?</p>

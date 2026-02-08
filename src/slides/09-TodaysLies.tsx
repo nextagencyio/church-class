@@ -8,10 +8,10 @@ export function TodaysLiesSlide() {
         {/* Header */}
         <motion.div variants={fadeUp} custom={0} className="text-center mb-10">
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gold-500/10 border border-gold-400/30 mb-6">
-            <span className="text-gold-400 text-base font-semibold uppercase tracking-wider">Discussion Questions</span>
+            <span className="text-gold-400 text-lg font-semibold uppercase tracking-wider">Discussion Questions</span>
           </div>
           <h2
-            className="text-4xl md:text-6xl font-bold"
+            className="text-5xl md:text-7xl font-bold"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Discerning <span className="text-gold-400">Truth</span>

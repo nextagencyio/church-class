@@ -44,7 +44,7 @@ export function TitleSlide() {
           custom={0}
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 mb-6"
         >
-          <span className="text-gold-400 text-base font-semibold tracking-wide">CHAPTER 3</span>
+          <span className="text-gold-400 text-lg font-semibold tracking-wide">CHAPTER 3</span>
         </motion.div>
 
         {/* Custom sparkle animation */}
@@ -64,7 +64,7 @@ export function TitleSlide() {
         <motion.h1
           variants={fadeUp}
           custom={0.15}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
+          className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6"
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
             textShadow: '0 2px 20px rgba(0,0,0,0.5)'
@@ -79,7 +79,7 @@ export function TitleSlide() {
         <motion.p
           variants={fadeUp}
           custom={0.2}
-          className="text-3xl md:text-4xl text-white/70 mb-10"
+          className="text-4xl md:text-5xl text-white/70 mb-10"
           style={{ textShadow: '0 1px 10px rgba(0,0,0,0.5)' }}
         >
           Colossians 2:1-7
@@ -92,13 +92,13 @@ export function TitleSlide() {
           className="flex items-center justify-center gap-4 mb-6"
         >
           <div className="w-16 h-px bg-gradient-to-r from-transparent to-gold-400/50" />
-          <span className="text-gold-400 text-2xl">✦</span>
+          <span className="text-gold-400 text-3xl">✦</span>
           <div className="w-16 h-px bg-gradient-to-l from-transparent to-gold-400/50" />
         </motion.div>
 
         {/* Subtitle/Theme with typewriter effect */}
         <p
-          className="text-xl md:text-2xl text-white/70 italic max-w-4xl mx-auto"
+          className="text-2xl md:text-3xl text-white/70 italic max-w-4xl mx-auto"
           style={{ textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)' }}
         >
           <Typewriter

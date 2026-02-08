@@ -20,12 +20,12 @@ export function JoysAndConcernsSlide() {
         {/* Header */}
         <motion.div variants={fadeUp} custom={0} className="text-center mb-10">
           <h2
-            className="text-4xl md:text-6xl font-bold mb-4"
+            className="text-5xl md:text-7xl font-bold mb-4"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Paul's Heart for the Colossians
           </h2>
-          <p className="text-xl text-white/60">From verses 1-5</p>
+          <p className="text-2xl text-white/60">From verses 1-5</p>
         </motion.div>
 
         {/* Two columns */}
@@ -38,7 +38,7 @@ export function JoysAndConcernsSlide() {
           >
             <div className="flex items-center gap-4 mb-8">
               <span className="text-4xl">😊</span>
-              <h3 className="text-3xl font-bold text-emerald-400">His Joys</h3>
+              <h3 className="text-4xl font-bold text-emerald-400">His Joys</h3>
             </div>
             <motion.ul variants={stagger} className="space-y-5">
               {joys.map((joy, index) => (
@@ -46,9 +46,9 @@ export function JoysAndConcernsSlide() {
                   key={index}
                   variants={fadeUp}
                   custom={0.3 + index * 0.1}
-                  className="flex items-start gap-4 text-xl md:text-2xl text-white/90"
+                  className="flex items-start gap-4 text-2xl md:text-3xl text-white/90"
                 >
-                  <span className="text-emerald-400 mt-1 text-2xl">✓</span>
+                  <span className="text-emerald-400 mt-1 text-3xl">✓</span>
                   <span>{joy}</span>
                 </motion.li>
               ))}
@@ -63,7 +63,7 @@ export function JoysAndConcernsSlide() {
           >
             <div className="flex items-center gap-4 mb-8">
               <span className="text-4xl">⚠️</span>
-              <h3 className="text-3xl font-bold text-amber-400">His Concerns</h3>
+              <h3 className="text-4xl font-bold text-amber-400">His Concerns</h3>
             </div>
             <motion.ul variants={stagger} className="space-y-5">
               {concerns.map((concern, index) => (
@@ -71,9 +71,9 @@ export function JoysAndConcernsSlide() {
                   key={index}
                   variants={fadeUp}
                   custom={0.3 + index * 0.1}
-                  className="flex items-start gap-4 text-xl md:text-2xl text-white/90"
+                  className="flex items-start gap-4 text-2xl md:text-3xl text-white/90"
                 >
-                  <span className="text-amber-400 mt-1 text-2xl">!</span>
+                  <span className="text-amber-400 mt-1 text-3xl">!</span>
                   <span>{concern}</span>
                 </motion.li>
               ))}

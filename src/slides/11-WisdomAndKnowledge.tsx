@@ -8,7 +8,7 @@ export function WisdomAndKnowledgeSlide() {
         {/* Header */}
         <motion.div variants={fadeUp} custom={0} className="text-center mb-10">
           <h2
-            className="text-4xl md:text-6xl font-bold"
+            className="text-5xl md:text-7xl font-bold"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Information vs.
@@ -26,9 +26,9 @@ export function WisdomAndKnowledgeSlide() {
           >
             <div className="flex items-center gap-4 mb-5">
               <span className="text-5xl">📚</span>
-              <h3 className="text-3xl font-bold text-white/80">Information</h3>
+              <h3 className="text-4xl font-bold text-white/80">Information</h3>
             </div>
-            <ul className="space-y-4 text-xl text-white/70">
+            <ul className="space-y-4 text-2xl text-white/70">
               <li className="flex items-start gap-3">
                 <span className="text-slate-400">•</span>
                 Mountains of data
@@ -55,9 +55,9 @@ export function WisdomAndKnowledgeSlide() {
           >
             <div className="flex items-center gap-4 mb-5">
               <span className="text-5xl">✨</span>
-              <h3 className="text-3xl font-bold text-gold-400">Wisdom & Knowledge</h3>
+              <h3 className="text-4xl font-bold text-gold-400">Wisdom & Knowledge</h3>
             </div>
-            <ul className="space-y-4 text-xl text-white/80">
+            <ul className="space-y-4 text-2xl text-white/80">
               <li className="flex items-start gap-3">
                 <span className="text-gold-400">✦</span>
                 Hidden treasures in Christ
@@ -84,10 +84,10 @@ export function WisdomAndKnowledgeSlide() {
           custom={0.5}
           className="bg-indigo-500/10 rounded-2xl p-10 border border-indigo-400/20 text-center"
         >
-          <p className="text-2xl md:text-3xl italic text-white/90 mb-4">
+          <p className="text-3xl md:text-4xl italic text-white/90 mb-4">
             "In Christ are hidden <strong className="text-gold-300 not-italic">all the treasures</strong> of wisdom and knowledge"
           </p>
-          <p className="text-xl text-indigo-300">— Colossians 2:3</p>
+          <p className="text-2xl text-indigo-300">— Colossians 2:3</p>
         </motion.div>
       </div>
     </Slide>

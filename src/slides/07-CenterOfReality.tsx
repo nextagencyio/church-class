@@ -8,7 +8,7 @@ export function CenterOfRealitySlide() {
         {/* Header */}
         <motion.div variants={fadeUp} custom={0} className="text-center mb-10">
           <h2
-            className="text-4xl md:text-6xl font-bold mb-4"
+            className="text-5xl md:text-7xl font-bold mb-4"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Not Just <span className="text-white/50">One Option</span>
@@ -25,10 +25,10 @@ export function CenterOfRealitySlide() {
             custom={0.2}
             className="bg-red-500/10 rounded-2xl p-10 border border-red-400/20"
           >
-            <div className="text-red-400 text-base font-semibold uppercase tracking-wider mb-5">
+            <div className="text-red-400 text-lg font-semibold uppercase tracking-wider mb-5">
               ✗ What Many Think Today
             </div>
-            <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
+            <p className="text-2xl md:text-3xl text-white/80 leading-relaxed">
               People need some kind of <em>spiritual experience</em>, and Jesus
               is one option among many who could supply it if they wanted.
             </p>
@@ -40,10 +40,10 @@ export function CenterOfRealitySlide() {
             custom={0.3}
             className="bg-emerald-500/10 rounded-2xl p-10 border border-emerald-400/20"
           >
-            <div className="text-emerald-400 text-base font-semibold uppercase tracking-wider mb-5">
+            <div className="text-emerald-400 text-lg font-semibold uppercase tracking-wider mb-5">
               ✓ What Paul Understood
             </div>
-            <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
+            <p className="text-2xl md:text-3xl text-white/80 leading-relaxed">
               King Jesus himself is the <strong className="text-white">center of the cosmos</strong>,
               the <strong className="text-white">key to life and the universe</strong>,
               the clue to genuinely human existence.
@@ -67,7 +67,7 @@ export function CenterOfRealitySlide() {
               key={index}
               variants={scaleIn}
               custom={0.5 + index * 0.1}
-              className="px-5 py-2.5 rounded-full bg-gold-400/10 border border-gold-400/30 text-gold-300 text-lg"
+              className="px-5 py-2.5 rounded-full bg-gold-400/10 border border-gold-400/30 text-gold-300 text-xl"
             >
               {item}
             </motion.span>

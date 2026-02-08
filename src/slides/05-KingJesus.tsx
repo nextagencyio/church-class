@@ -15,14 +15,14 @@ export function KingJesusSlide() {
         {/* Header */}
         <motion.div variants={fadeUp} custom={0} className="text-center mb-10">
           <h2
-            className="text-4xl md:text-6xl font-bold mb-4"
+            className="text-5xl md:text-7xl font-bold mb-4"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             The Theme Throughout:
             <br />
             <span className="text-shimmer">King Jesus</span>
           </h2>
-          <p className="text-2xl text-white/60">Paul's answer to every question</p>
+          <p className="text-3xl text-white/60">Paul's answer to every question</p>
         </motion.div>
 
         {/* Points grid */}
@@ -45,7 +45,7 @@ export function KingJesusSlide() {
               >
                 {point.emoji}
               </motion.span>
-              <p className="text-2xl md:text-3xl text-white/90">{point.text}</p>
+              <p className="text-3xl md:text-4xl text-white/90">{point.text}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -56,7 +56,7 @@ export function KingJesusSlide() {
           custom={0.6}
           className="mt-10 text-center"
         >
-          <p className="text-xl md:text-2xl text-gold-300 italic max-w-4xl mx-auto">
+          <p className="text-2xl md:text-3xl text-gold-300 italic max-w-4xl mx-auto">
             "The treasure that was hidden, to which the map would lead them,
             <br />
             was <strong>Jesus Christ himself</strong>."
