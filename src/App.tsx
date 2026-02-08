@@ -24,8 +24,8 @@ function App() {
   return (
     <SlideContainer>
       <TitleSlide />
-      <TreasureHookSlide />
       <OpeningQuestionSlide />
+      <TreasureHookSlide />
       <ScriptureVideoSlide />
       <ScriptureReadingSlide />
       <JoysDiscussionSlide />
